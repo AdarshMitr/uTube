@@ -12,26 +12,27 @@ import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
-export const logo ='../img/logo_ut.png';
+export const logo ='https://i.ibb.co/RzCG8BY/ut-logo.png';
+
 
 export const categories = [
-  { name: 'New', icon: <HomeIcon />, },
-  { name: 'JS Mastery', icon: <CodeIcon />, },
-  { name: 'Coding', icon: <CodeIcon />, },
-  { name: 'ReactJS', icon: <CodeIcon />, },
-  { name: 'NextJS', icon: <CodeIcon />, },
-  { name: 'Music', icon: <MusicNoteIcon /> },
-  { name: 'Education', icon: <SchoolIcon />, },
-  { name: 'Podcast', icon: <GraphicEqIcon />, },
-  { name: 'Movie', icon: <OndemandVideoIcon />, },
-  { name: 'Gaming', icon: <SportsEsportsIcon />, },
-  { name: 'Live', icon: <LiveTvIcon />, },
-  { name: 'Sport', icon: <FitnessCenterIcon />, },
-  { name: 'Fashion', icon: <CheckroomIcon />, },
-  { name: 'Beauty', icon: <FaceRetouchingNaturalIcon />, },
-  { name: 'Comedy', icon: <TheaterComedyIcon />, },
-  { name: 'Gym', icon: <FitnessCenterIcon />, },
-  { name: 'Crypto', icon: <DeveloperModeIcon />, },
+  { id:1, name: 'New', icon: <HomeIcon />, },
+  { id:2, name: 'Learn JS', icon: <CodeIcon />, },
+  { id:3, name: 'Coding', icon: <CodeIcon />, },
+  { id:4, name: 'ReactJS', icon: <CodeIcon />, },
+  { id:5, name: 'NextJS', icon: <CodeIcon />, },
+  { id:6, name: 'Music', icon: <MusicNoteIcon /> },
+  { id:7, name: 'Education', icon: <SchoolIcon />, },
+  { id:8, name: 'Podcast', icon: <GraphicEqIcon />, },
+  { id:9, name: 'Movie', icon: <OndemandVideoIcon />, },
+  { id:10, name: 'Gaming', icon: <SportsEsportsIcon />, },
+  { id:11, name: 'Live', icon: <LiveTvIcon />, },
+  { id:12, name: 'Sport', icon: <FitnessCenterIcon />, },
+  { id:13, name: 'Fashion', icon: <CheckroomIcon />, },
+  { id:14, name: 'Beauty', icon: <FaceRetouchingNaturalIcon />, },
+  { id:15, name: 'Comedy', icon: <TheaterComedyIcon />, },
+  { id:16, name: 'Gym', icon: <FitnessCenterIcon />, },
+  { id:17, name: 'Crypto', icon: <DeveloperModeIcon />, },
 ];
 
 export const demoThumbnailUrl = '../img/adarshmitr.png';
