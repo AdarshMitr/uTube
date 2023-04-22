@@ -8,12 +8,16 @@ import { fetchFromAPI } from '../utils/fetchFromAPI';
 const Feed = () => {
 
   const [selectedCategory,setSelectedCategory]=useState('New');
-  const [videos, setVideos]=useState(null);
+  const [videos, setVideos]=useState([]);
 useEffect(()=>{
   setVideos(null);
   
-  fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
-  .then((data)=>setVideos(data.item))
+  fetchFromAPI('search', selectedCategory)
+  .then((data)=> {
+    setVideos(data?.contents);
+  }).catch(error => {
+    console.error(error);
+  })
 },[selectedCategory]);
 
   return (
@@ -37,7 +41,7 @@ fontWeight='bold' mb={2} sx={{
 {selectedCategory} <span style={{color:'#F99844'}}>videos</span>
 </Typography>
 
-<Videos videos={videos}/>
+{videos && videos.length && <Videos videos={videos}/>}
 </Box>
       
       </Stack>
